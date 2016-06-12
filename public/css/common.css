@@ -1,0 +1,56 @@
+.Sidebar {
+  width: 20%;
+  height: 100vh;
+  background-color: #2C333F;
+  color: #7A8998; }
+
+.Header {
+  width: 80%;
+  float: right;
+  height: 15vh;
+  font-family: AftaSans, sans-serif; }
+  .Header__container__dashBoardSection {
+    width: 50%;
+    margin-left: 15%; }
+    .Header__container__dashBoardSection .dashBoard {
+      color: #727B85;
+      display: block; }
+      .Header__container__dashBoardSection .dashBoard--big {
+        font-size: 30px; }
+      .Header__container__dashBoardSection .dashBoard--small {
+        font-size: 14px; }
+  .Header__container__welcomeSection {
+    width: 10%; }
+  .Header__container__langSection {
+    width: 15%;
+    min-width: 116px;
+    padding: 0 2%; }
+    .Header__container__langSection .form-control:focus {
+      box-shadow: none; }
+    .Header__container__langSection .form-control .en {
+      background: red;
+      background-image: url("sprites/flags.jpg"); }
+  .Header__container__signSection {
+    padding-left: 5%; }
+    .Header__container__signSection .btn {
+      padding: 10px 25px;
+      color: #727B85; }
+
+.u-displayTable {
+  display: table; }
+
+.u-displayTableRow {
+  display: table-row; }
+
+.u-displayTableCell {
+  display: table-cell; }
+
+.u-verticalAlignMiddle {
+  vertical-align: middle; }
+
+.u-paddingLeftBig {
+  padding-left: 40px; }
+
+@font-face {
+  font-family: AftaSans;
+  src: url("../public/fonts/aftasans.otf") format("opentype"); }
