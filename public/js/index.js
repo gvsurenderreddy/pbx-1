@@ -30,12 +30,61 @@ class Header extends React.Component{
 
 
 //SideBarComponent
-class Sidebar extends React.Component{
+class Sidebar extends React.Component {
 	render(){
 		return(
 			<div className="Sidebar">
-				Hello from sidebar
+				<SideBarHeader />
+				<SideBarMenu />
 			</div>
+
+		)
+	}
+}
+
+
+class SideBarHeader extends React.Component {
+	render(){
+		return (
+				<div className="Sidebar__header">
+					<span className="Sidebar__header--small">THE</span>
+					<span className="Sidebar__header--big">PBX</span>
+				</div>
+			)
+	}
+}
+
+class SideBarMenu extends React.Component {
+	render(){
+		return (
+				<div className="Sidebar__menu">
+					<SideBarMenuItem title="Dashboard" />
+					<SideBarMenuSection title="Subscribers and groups" items={["Subscribers", "Groups"]}/>
+				</div>
+		)
+	}
+}
+
+class SideBarMenuSection extends React.Component{
+	createItem(itemText) {
+        return <div className="menuItem">{itemText}</div>;
+     };
+	render(){
+		return(
+			<div>
+				<div>{this.props.title}</div>
+				{this.props.items.map(this.createItem)}
+			</div>
+		)
+	}
+}
+
+class SideBarMenuItem extends React.Component {
+	render(){
+		return (
+				<div className="menuItem">
+					{this.props.title}
+				</div>
 		)
 	}
 }

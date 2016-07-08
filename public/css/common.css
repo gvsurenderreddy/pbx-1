@@ -3,6 +3,20 @@
   height: 100vh;
   background-color: #2C333F;
   color: #7A8998; }
+  .Sidebar__header {
+    height: 15vh;
+    width: 100%;
+    padding: 15px 0px 0px 65px; }
+    .Sidebar__header--big {
+      font-weight: bold;
+      font-size: 30px;
+      display: inline-block;
+      margin-left: 5px; }
+    .Sidebar__header--small {
+      font-size: 14px;
+      display: inline-block; }
+  .Sidebar .menuItem {
+    text-align: center; }
 
 .Header {
   width: 80%;
@@ -27,9 +41,6 @@
     padding: 0 2%; }
     .Header__container__langSection .form-control:focus {
       box-shadow: none; }
-    .Header__container__langSection .form-control .en {
-      background: red;
-      background-image: url("sprites/flags.jpg"); }
   .Header__container__signSection {
     padding-left: 5%; }
     .Header__container__signSection .btn {
@@ -53,4 +64,4 @@
 
 @font-face {
   font-family: AftaSans;
-  src: url("../public/fonts/aftasans.otf") format("opentype"); }
+  src: url("../fonts/aftasans.otf") format("opentype"); }
