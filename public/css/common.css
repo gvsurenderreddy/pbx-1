@@ -1,4 +1,5 @@
 .Sidebar {
+  float: left;
   width: 20%;
   height: 100vh;
   background-color: #2C333F;
@@ -25,14 +26,15 @@
     margin-top: 15px;
     text-transform: none; }
     .Sidebar .menuItem a:link, .Sidebar .menuItem a:visited {
-      color: #6E7C8A; }
+      color: #6E7C8A;
+      text-decoration: none; }
     .Sidebar .menuItem a:hover {
       text-decoration: none;
-      color: #a6afb8; }
+      color: #a6afb8;
+      cursor: pointer; }
 
 .Header {
   width: 80%;
-  float: right;
   height: 15vh; }
   .Header__container__dashBoardSection {
     width: 50%;
@@ -57,6 +59,29 @@
     .Header__container__signSection .btn {
       padding: 10px 25px;
       color: #727B85; }
+
+.Main {
+  background-color: #F1F1F3;
+  height: 85vh;
+  width: 80%;
+  display: inline-block; }
+
+.TableSectionWrapper {
+  width: 90%;
+  margin: 40px auto;
+  background-color: #fff; }
+  .TableSectionWrapper__tableHeader {
+    font-size: 20px;
+    background-color: #84919F;
+    color: #fff; }
+
+.table {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
+  .table thead tr th {
+    border-bottom-color: black;
+    padding: 20px 0px; }
 
 .u-displayTable {
   display: table; }

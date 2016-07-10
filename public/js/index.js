@@ -1326,7 +1326,8 @@ var Header = React.createClass({
 	}
 });
 
-//SideBarComponent
+//Sidebar Component
+
 var Sidebar = React.createClass({
 	displayName: "Sidebar",
 
@@ -1425,12 +1426,130 @@ var Main = React.createClass({
 	render: function () {
 		return React.createElement(
 			"div",
-			null,
-			React.createElement(Header, null),
-			React.createElement(Sidebar, null)
+			{ className: "Main" },
+			React.createElement(Table, null)
 		);
 	}
 });
 
-ReactDOM.render(React.createElement(Main, null), document.getElementById("pbxApp"));
+var Table = React.createClass({
+	displayName: "Table",
+
+	render: function () {
+		return React.createElement(
+			"div",
+			{ className: "TableSectionWrapper" },
+			React.createElement(
+				"div",
+				{ className: "TableSectionWrapper__tableHeader" },
+				"Active Subscribers"
+			),
+			React.createElement(
+				"table",
+				{ className: "table" },
+				React.createElement(
+					"thead",
+					null,
+					React.createElement(
+						"tr",
+						null,
+						React.createElement(
+							"th",
+							null,
+							"Extension Number"
+						),
+						React.createElement(
+							"th",
+							null,
+							"SIP Address"
+						),
+						React.createElement(
+							"th",
+							null,
+							"Subscriber name"
+						)
+					)
+				),
+				React.createElement(
+					"tbody",
+					null,
+					React.createElement(
+						"tr",
+						null,
+						React.createElement(
+							"td",
+							null,
+							"Bla Bla Bla"
+						),
+						React.createElement(
+							"td",
+							null,
+							"Bla Bla Bla"
+						),
+						React.createElement(
+							"td",
+							null,
+							"Bla Bla Bla"
+						)
+					),
+					React.createElement(
+						"tr",
+						null,
+						React.createElement(
+							"td",
+							null,
+							"Bla Bla Bla"
+						),
+						React.createElement(
+							"td",
+							null,
+							"Bla Bla Bla"
+						),
+						React.createElement(
+							"td",
+							null,
+							"Bla Bla Bla"
+						)
+					),
+					React.createElement(
+						"tr",
+						null,
+						React.createElement(
+							"td",
+							null,
+							"Bla Bla Bla"
+						),
+						React.createElement(
+							"td",
+							null,
+							"Bla Bla Bla"
+						),
+						React.createElement(
+							"td",
+							null,
+							"Bla Bla Bla"
+						)
+					)
+				)
+			)
+		);
+	}
+});
+
+//App Component
+var App = React.createClass({
+	displayName: "App",
+
+	render: function () {
+		return React.createElement(
+			"div",
+			null,
+			React.createElement(Sidebar, null),
+			React.createElement(Header, null),
+			React.createElement(Main, null)
+		);
+	}
+});
+
+ReactDOM.render(React.createElement(App, null), document.getElementById("pbxApp"));
 },{"react-logger":8}]},{},[10]);
