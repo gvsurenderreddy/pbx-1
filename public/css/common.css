@@ -19,18 +19,21 @@
     margin-top: 30px;
     margin-left: 40px;
     text-transform: uppercase;
-    color: #555C6A; }
+    color: #555C6A;
+    font-weight: bold; }
   .Sidebar .menuItem {
     margin-top: 15px;
-    color: #6E7C8A;
-    text-align: left;
     text-transform: none; }
+    .Sidebar .menuItem a:link, .Sidebar .menuItem a:visited {
+      color: #6E7C8A; }
+    .Sidebar .menuItem a:hover {
+      text-decoration: none;
+      color: #a6afb8; }
 
 .Header {
   width: 80%;
   float: right;
-  height: 15vh;
-  font-family: AftaSans, sans-serif; }
+  height: 15vh; }
   .Header__container__dashBoardSection {
     width: 50%;
     margin-left: 15%; }
@@ -73,3 +76,6 @@
 @font-face {
   font-family: AftaSans;
   src: url("../fonts/aftasans.otf") format("opentype"); }
+
+body {
+  font-family: AftaSans, sans-serif; }

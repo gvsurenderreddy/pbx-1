@@ -1385,7 +1385,11 @@ var SideBarMenuSection = React.createClass({
 		return React.createElement(
 			"div",
 			{ className: "menuItem", key: i },
-			itemText
+			React.createElement(
+				"a",
+				{ href: "#" },
+				itemText
+			)
 		);
 	},
 	render: function () {
