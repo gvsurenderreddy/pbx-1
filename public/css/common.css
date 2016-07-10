@@ -15,8 +15,16 @@
     .Sidebar__header--small {
       font-size: 14px;
       display: inline-block; }
+  .Sidebar .menuSection {
+    margin-top: 30px;
+    margin-left: 40px;
+    text-transform: uppercase;
+    color: #555C6A; }
   .Sidebar .menuItem {
-    text-align: center; }
+    margin-top: 15px;
+    color: #6E7C8A;
+    text-align: left;
+    text-transform: none; }
 
 .Header {
   width: 80%;
