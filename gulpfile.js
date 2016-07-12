@@ -18,7 +18,7 @@ gulp.task('watch:css', function(){
 })
 
 gulp.task('js', function(){
-	return browserify('./src/app.js')
+	return browserify('./src/js/src/app.js')
         .bundle()
         // Передаем имя файла, который получим на выходе, vinyl-source-stream
         .pipe(source('index.js'))
@@ -30,11 +30,11 @@ gulp.task('watch:js', function(){
 });
 
 gulp.task('babel', function() {
-	return gulp.src('src/js/app.js')
+	return gulp.src('src/js/*.js')
 		.pipe(babel({
 			presets: ['react']
 		}))
-		.pipe(gulp.dest('src'));
+		.pipe(gulp.dest('src/js/src'));
 });
 
 gulp.task('default', ['watch:js', 'watch:css']);

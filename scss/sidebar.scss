@@ -1,0 +1,51 @@
+.Sidebar{
+	float:left;
+	width: 20%;
+	height: 100vh;
+	background-color: #2C333F;
+	color: #7A8998;
+
+	&__header{
+		height: 15vh;
+		width:100%;
+		padding: 15px 0px 0px 65px;
+
+		&--big {
+			font-weight: bold;
+			font-size: 30px;
+			display: inline-block;
+			margin-left: 5px;
+		}
+
+		&--small{
+			font-size: 14px;
+			display: inline-block;
+		}
+		
+	}
+
+	.menuSection{
+		margin-top: 30px;
+		margin-left: 40px;
+		text-transform: uppercase;
+		color:#555C6A;
+		font-weight: bold;
+	}
+
+	.menuItem{
+		margin-top: 15px;
+		 
+		text-transform: none;
+
+		& a:link, a:visited{
+			color:#6E7C8A;
+			text-decoration: none;
+		}
+		& a:hover{
+			text-decoration: none;
+			color:lighten(#6E7C8A, 20%);
+			cursor: pointer;
+		}
+	}
+}
+

@@ -1,3 +1,7 @@
+var logger = require("react-logger");
+
+//Sidebar Component
+
 var Sidebar = React.createClass ({
 	render:function(){
 		return(
@@ -60,3 +64,5 @@ var SideBarMenuItem = React.createClass ({
 		)
 	}
 });
+
+module.exports = Sidebar;

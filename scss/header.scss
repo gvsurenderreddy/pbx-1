@@ -1,0 +1,48 @@
+.Header {
+	
+	width:80%;
+	
+	height: 15vh;
+	
+	&__container{
+		&__dashBoardSection {
+			width:50%;
+			margin-left: 15%;
+			.dashBoard{
+				color: #727B85;
+				display: block;	
+				
+				&--big{
+					font-size: 30px;
+				}
+				&--small{
+					font-size: 14px;
+				}
+			}
+		}
+
+		&__welcomeSection{
+			width: 10%;
+		}
+
+		&__langSection{
+			width: 15%;
+			min-width: 116px;
+			padding: 0 2%;
+
+			.form-control{
+				&:focus{
+					box-shadow: none;
+				}
+			}
+		}
+		&__signSection{
+			padding-left: 5%;
+
+			.btn{
+				padding: 10px 25px;
+				color: #727B85;
+			}
+		}
+	}
+}
